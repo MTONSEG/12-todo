@@ -1,0 +1,42 @@
+.button {
+	border-radius: 4px;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: var(--white);
+	background: var(--blue);
+	display: block;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&_menu,
+	&_text {
+		color: var(--grey);
+		font-weight: 500;
+		width: 100%;
+		text-align: left;
+		border-bottom: 1px solid var(--grey-01);
+
+		background: var(--white);
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&:hover {
+			background: var(--grey-01);
+		}
+	}
+
+	&_text {
+		border: 0;
+	}
+
+	@media (max-width: 767px) {
+		&_text {
+			width: auto;
+			padding: 5px;
+		}
+	}
+}

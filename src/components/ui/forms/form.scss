@@ -1,0 +1,91 @@
+.field {
+	margin: 0 0 15px;
+
+	&__title {
+		font-size: 14px;
+		margin: 0 0 5px;
+	}
+
+	&__error {
+		font-size: 12px;
+		color: var(--red);
+		margin: 4px;
+	}
+
+	&__input,
+	&__textarea {
+		border-radius: 5px;
+		display: block;
+		padding: 10px;
+		font-size: 16px;
+		color: var(--black);
+		border: 1px solid var(--grey-03);
+		width: 100%;
+	}
+
+	&__textarea {
+		resize: none;
+		height: 100px;
+	}
+
+	&.error .field__input {
+		border-color: var(--red);
+	}
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	&__custom {
+		display: block;
+		width: 40px;
+		height: 10px;
+		border-radius: 50px;
+		background: var(--grey);
+		position: relative;
+		margin: 0 5px 0 0;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			height: 24px;
+			width: 24px;
+			border-radius: 50%;
+			background: var(--blue);
+			transition: all 0.2s;
+		}
+	}
+
+	&__label {
+		font-size: 16px;
+	}
+
+	&.checked .checkbox__custom::after {
+		left: calc(100% - 24px);
+		background: var(--green);
+	}
+}
+
+.color-piker {
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	transition: all 0.2s;
+	box-shadow: 0 0 5px var(--grey);
+
+	input {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(4);
+		cursor: pointer;
+	}
+}

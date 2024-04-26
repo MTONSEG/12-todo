@@ -1,0 +1,17 @@
+.color-piker {
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	transition: all 0.2s;
+	box-shadow: 0 0 5px var(--grey);
+
+	input {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(4);
+		cursor: pointer;
+	}
+}

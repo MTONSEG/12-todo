@@ -1,0 +1,40 @@
+.points-btn {
+	justify-content: center;
+	width: 40px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+	padding: 10px 0;
+
+	span,
+	span::after,
+	span::before {
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		display: block;
+		border-radius: 50%;
+		background: var(--black);
+	}
+
+	span {
+		left: calc(50% - 2.5px);
+	}
+
+	span::after,
+	span::before {
+		content: '';
+	}
+
+	span::after {
+		left: calc(100% + 5px);
+	}
+
+	span::before {
+		right: calc(100% + 5px);
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+}

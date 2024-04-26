@@ -5,9 +5,4 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
 	base: '/12-todo/',
 	plugins: [react()],
-	resolve: {
-		alias: {
-			'@': './src/'
-		}
-	}
 })

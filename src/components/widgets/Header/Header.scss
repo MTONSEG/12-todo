@@ -34,9 +34,14 @@
 			margin: 0;
 		}
 
+		&:hover {
+			border-color: var(--blue);
+		}
+
 		&.active {
 			background: var(--blue);
 			color: var(--white);
+			pointer-events: none;
 		}
 	}
 

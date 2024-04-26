@@ -22,10 +22,10 @@ const Header: FC<PropsType> = () => {
 					<p className='header__logo'>Todo</p>
 
 					<nav className='header__link-list'>
-						<NavLink to='/12-todo/' className='header__link'>
+						<NavLink to='/12-todo/' className='header__link' end>
 							{lang.all}
 						</NavLink>
-						
+
 						<NavLink to='/12-todo/completed/' className='header__link'>
 							{lang.completed}
 						</NavLink>

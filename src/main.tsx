@@ -16,10 +16,10 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: '/12-todo/',
-				element: <Home />
+				element: <Home />,
 			},
 			{
-				path: '/12-todo/deleted',
+				path: '/12-todo/completed',
 				element: <Deleted />
 			}
 		]

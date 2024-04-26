@@ -25,7 +25,8 @@ const Header: FC<PropsType> = () => {
 						<NavLink to='/12-todo/' className='header__link'>
 							{lang.all}
 						</NavLink>
-						<NavLink to='/12-todo/completed' className='header__link'>
+						
+						<NavLink to='/12-todo/completed/' className='header__link'>
 							{lang.completed}
 						</NavLink>
 					</nav>

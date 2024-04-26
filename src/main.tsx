@@ -11,15 +11,15 @@ import { PersistGate } from 'redux-persist/integration/react'
 
 const router = createBrowserRouter([
 	{
-		path: '/',
+		path: '/12-todo',
 		element: <App />,
 		children: [
 			{
-				path: '/',
-				element: <Home />,
+				path: '/12-todo',
+				element: <Home />
 			},
 			{
-				path: '/completed',
+				path: '/12-todo/completed',
 				element: <Deleted />
 			}
 		]

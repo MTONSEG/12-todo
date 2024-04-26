@@ -6,6 +6,7 @@ import ColorPiker from '../../ui/forms/ColorPicker/ColorPiker'
 import Input from '../../ui/forms/Input/Input'
 import Modal from '../../ui/modals/Modal/Modal'
 import './CategoryModal.scss'
+import { lang } from '../../../dictionaries'
 
 const CategoryModal = () => {
 	const [isError, setError] = useState<boolean>(false)
@@ -48,12 +49,12 @@ const CategoryModal = () => {
 
 	return (
 		<Modal
-			title='Add Category'
+			title={lang.add_category}
 			isOpen={isOpenCategoryModal}
 			handleClose={handleCloseModal}
 		>
 			<Input
-				title='Title'
+				title={lang.title}
 				value={category.labelValue}
 				setValue={handleChangeLabel}
 				isError={isError}
@@ -62,7 +63,7 @@ const CategoryModal = () => {
 			<ColorPiker value={category.color} setValue={handleChangeColor} />
 
 			<Button
-				children={'Add'}
+				children={lang.add}
 				style={{ margin: '0 0 0 auto' }}
 				onClick={handleAddBtn}
 			/>

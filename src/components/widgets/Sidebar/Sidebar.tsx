@@ -4,6 +4,7 @@ import { useAppSelector } from '../../../hooks/useTypedRedux'
 import CategoryBtn from '../../ui/buttons/CategoryBtn/CategoryBtn'
 import Button from '../../ui/buttons/Button/Button'
 import { useActions } from '../../../hooks/useAction'
+import { lang } from '../../../dictionaries'
 
 interface PropsType {}
 
@@ -26,7 +27,12 @@ const Sidebar: FC<PropsType> = () => {
 					/>
 				))}
 			</div>
-			<Button children='Add' variant='text' onClick={handleOpen} />
+
+			<Button
+				children={lang.add_category}
+				variant='text'
+				onClick={handleOpen}
+			/>
 		</div>
 	)
 }

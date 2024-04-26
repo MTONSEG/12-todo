@@ -3,6 +3,7 @@ import './Header.scss'
 import { NavLink } from 'react-router-dom'
 import Container from '../../containers/Container/Container'
 import { useActions } from '../../../hooks/useAction'
+import { lang } from '../../../dictionaries'
 
 interface PropsType {}
 
@@ -22,10 +23,10 @@ const Header: FC<PropsType> = () => {
 
 					<nav className='header__link-list'>
 						<NavLink to='/' className='header__link'>
-							All
+							{lang.all}
 						</NavLink>
 						<NavLink to='deleted' className='header__link'>
-							Completed
+							{lang.completed}
 						</NavLink>
 					</nav>
 

@@ -1,0 +1,14 @@
+{
+	"todo": "Todo",
+	"all": "All",
+	"edit": "Edit",
+	"delete": "Delete",
+	"completed": "Completed",
+	"add_category": "Add category",
+	"add_todo": "Add Todo",
+	"add": "Add",
+	"title": "Title",
+	"description": "Description",
+	"is-empty-todo": "Todo is empty. You can create new =)",
+	"is-empty-completed-todo": "There are no completed tasks yet."
+}

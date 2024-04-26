@@ -8,6 +8,7 @@ import CategoryList from '../CategoryList/CategoryList'
 import './TodoModal.scss'
 import { TodoModalType } from '../../../types/types'
 import { useState } from 'react'
+import { lang } from '../../../dictionaries'
 
 const TodoModal = () => {
 	const {
@@ -58,19 +59,19 @@ const TodoModal = () => {
 
 	return (
 		<Modal
-			title='Add Todo'
+			title={lang.add_todo}
 			isOpen={isOpenTodoModal}
 			handleClose={handleCloseModal}
 		>
 			<Input
-				title='Title'
+				title={lang.title}
 				value={todo.titleValue}
 				setValue={handleChangeTitle}
 				isError={isError}
 			/>
 
 			<Textarea
-				title='Description'
+				title={lang.description}
 				value={todo.descriptionValue}
 				setValue={handleChangeDescription}
 			/>

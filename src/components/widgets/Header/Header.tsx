@@ -31,9 +31,7 @@ const Header: FC<PropsType> = () => {
 						</NavLink>
 					</nav>
 
-					<button className='header__add-btn' onClick={handleOpenPopup}>
-						+
-					</button>
+					<button className='header__add-btn' onClick={handleOpenPopup}/>
 				</div>
 			</Container>
 		</header>

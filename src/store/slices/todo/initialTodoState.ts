@@ -46,8 +46,8 @@ export const initialTodoState: TodoStateType = {
 	todoList: [
 		{
 			id: 'e60e82d7',
-			title: 'sdfsd',
-			description: 'fsdfsdf',
+			title: 'First Todo',
+			description: 'This is description todo =)',
 			category: {
 				id: 'e60e82d7-a7e1-4576-9c19-f281ca1c9eae',
 				label: 'School',
